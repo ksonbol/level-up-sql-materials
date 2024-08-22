@@ -5,3 +5,8 @@
 -- they plan to bring in their party.
 
 -- Hint: SQLite offers the INTEGER and REAL datatypes
+CREATE TABLE if not exists Responses (
+CustomerId int PK not null,
+PartySize int not null
+);
+
