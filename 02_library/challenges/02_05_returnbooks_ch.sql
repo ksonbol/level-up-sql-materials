@@ -17,5 +17,4 @@ AND ReturnedDate IS NULL; -- otherwise, this'd overwrite all the already-returne
 SELECT b.Title, b.Barcode, l.ReturnedDate
 FROM Loans l
 JOIN Books b ON b.BookId = l.BookId
-WHERE l.ReturnedDate = '2022-07-05'
-AND Barcode in ('6435968624', '5677520613', '8730298424');
+WHERE l.ReturnedDate = '2022-07-05';
